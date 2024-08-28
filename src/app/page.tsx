@@ -1,3 +1,11 @@
+import React from 'react';
+import Counter from "../app/components/Counter";
+
 export default function Home() {
-    return <div>Main Page</div>;
+    return (
+        <>
+            <h1>홈페이지</h1>
+            <Counter />
+        </>
+    );
 }
