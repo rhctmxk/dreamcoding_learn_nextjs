@@ -2,6 +2,8 @@ import { getProducts } from '@/service/products';
 import Link from "next/link";
 import {Metadata} from "next";
 import MeowArticle from "@/app/components/MeowArticle";
+import Image from "next/image";
+import clothesImage from '../../../public/image/clothes.jpg';
 
 export const metadata: Metadata = {
     title: '멋진 제품 사이틑 | 전체 제품 확인',
@@ -24,6 +26,7 @@ export default async function ProductsPage() {
     return (
         <>
             <h1>제품 설명 페이지</h1>
+            <Image src={clothesImage} alt='Clothes' priority/>
             <ul>
                 {products.map((product, index) => 
                     <li key={index}>

@@ -4,7 +4,8 @@ import {promises as fs} from 'fs';
 export type Product = {
     id: string;
     name: string;
-    price: string;
+    price: number;
+    image: string;
 }
 
 // getProducts 호출 시, 제품의 정보 제공
