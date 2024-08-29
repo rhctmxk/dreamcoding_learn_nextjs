@@ -1,7 +1,7 @@
 import { getProducts } from '@/service/products';
 import Link from "next/link";
 import {Metadata} from "next";
-import styles from "./page.module.css";
+import MeowArticle from "@/app/components/MeowArticle";
 
 export const metadata: Metadata = {
     title: '멋진 제품 사이틑 | 전체 제품 확인',
@@ -31,9 +31,7 @@ export default async function ProductsPage() {
                     </li>
                 )}
             </ul>
-            <article className="styles.article">
-                {factText}
-            </article>
+            <MeowArticle/>
         </>
     )
 }
